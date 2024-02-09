@@ -24,8 +24,6 @@ Route::get('/', function () {
 //RUTA PARA LA AUTENTICACION DE LA APLICACION 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store'])->name('register');
-
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store'])->name('login');
-
 Route::post('logout', [LogOutController::class, 'store'])->name('logout');
